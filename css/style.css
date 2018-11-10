@@ -241,12 +241,15 @@ label { }
 
 
 .cta-section { 
-    padding-top: 140px; padding-bottom: 140px; 
-    background: linear-gradient(rgba(30, 28, 24, 0.8), rgba(30, 28, 24, 0.8)), rgba(30, 28, 24, 0.8) url(../images/cta-section-img.jpg) no-repeat center; background-size: cover; }
+    
+    background-color: #eeeeee; background-size: cover; }
 .cta-caption {  }
 .cta-title { font-size: 36px; color: #fff; line-height: 58px; font-weight: 600; margin-bottom: 10px; letter-spacing: -1px; }
 .cta-text { font-size: 18px; color: #fff; margin-bottom: 30px; }
-
+.cta-section img 
+{
+    margin-left: 30px;
+}
 /*--------------------------------
 4.8 Image Hover Effect 
 ----------------------------------*/
@@ -283,7 +286,7 @@ label { }
     5.1 Header Regular 
    ----------------------*/
 
-.logo { display: flex; align-items: center; justify-content: center; margin-bottom: 5vh; border-radius:25%; border: solid 1px #dcdcdc;}
+.logo { display: flex; align-items: center; justify-content: center; margin-bottom: 5vh; border-radius:25%; }
 .header { z-index: 9999; position: relative; padding-top: 20px; padding-bottom: 20px; }
 .top-text { text-align: right; }
 .top-text .text-block { padding-left: 20px; color: #fff; line-height: 18px; }
@@ -709,7 +712,7 @@ opacity: .5; }
      .hero-section {padding-top: 50px; padding-bottom: 50px;}
      .comment-info {padding-left: 100px;}
      .cta-title {font-size: 26px; line-height: 40px;}
-     .cta-section {padding-top: 50px; padding-bottom: 50px;}
+     .cta-section {padding-top: 50px; padding-bottom: 50px; background-color: #eeeeee; align-items: center; display:flex; justify-content: center;}
      .footer-widget {margin-bottom: 20px;}
      .footer-widget .widget-title {margin-bottom: 0px;}
      .page-title {font-size: 20px;}
@@ -725,7 +728,7 @@ opacity: .5; }
      .hero-section {padding-top: 50px; padding-bottom: 50px;}
      .comment-info {padding-left: 100px;}
      .cta-title {font-size: 26px; line-height: 40px;}
-     .cta-section {padding-top: 50px; padding-bottom: 50px;}
+     .cta-section {padding-top: 50px; padding-bottom: 50px; background-color: #eeeeee; align-items: center; display:flex; justify-content: center;}
      .footer-widget {margin-bottom: 20px;}
      .footer-widget .widget-title {margin-bottom: 0px;}
      .page-title {font-size: 20px;}
@@ -742,7 +745,7 @@ opacity: .5; }
      .hero-section {padding-top: 50px; padding-bottom: 50px;}
      .comment-info {padding-left: 100px;}
      .cta-title {font-size: 26px; line-height: 40px;}
-     .cta-section {padding-top: 50px; padding-bottom: 50px;}
+     .cta-section {padding-top: 50px; padding-bottom: 50px; background-color: #eeeeee; align-items: center; display:flex; justify-content: center;}
      .footer-widget {margin-bottom: 20px;}
      .footer-widget .widget-title {margin-bottom: 0px;}
      .page-title {font-size: 20px;}
@@ -759,7 +762,7 @@ opacity: .5; }
      .hero-section {padding-top: 50px; padding-bottom: 50px;}
      .comment-info {padding-left: 100px;}
      .cta-title {font-size: 26px; line-height: 40px;}
-     .cta-section {padding-top: 50px; padding-bottom: 50px;}
+     .cta-section {padding-top: 50px; padding-bottom: 50px; background-color: #eeeeee; align-items: center; display:flex; justify-content: center;}
      .footer-widget {margin-bottom: 20px;}
      .footer-widget .widget-title {margin-bottom: 0px;}
      .page-title {font-size: 20px;}
@@ -776,7 +779,7 @@ opacity: .5; }
      .hero-section {padding-top: 50px; padding-bottom: 50px;}
      .comment-info {padding-left: 100px;}
      .cta-title {font-size: 26px; line-height: 40px;}
-     .cta-section {padding-top: 50px; padding-bottom: 50px;}
+     .cta-section {padding-top: 50px; padding-bottom: 50px; background-color: #eeeeee; align-items: center; display:flex; justify-content: center;}
      .footer-widget {margin-bottom: 20px;}
      .footer-widget .widget-title {margin-bottom: 0px;}
      .page-title {font-size: 20px;}
@@ -805,4 +808,21 @@ opacity: .5; }
         dislay:flex; 
         align-items: center;
         justify-content: center;
+    }
+    .horaire
+    {
+        
+        color: white;
+        font-size: 1em;
+    }
+    
+    .horaire>tbody>tr>td,.horaire>tbody>tr>th, .horaire>tfoot>tr>td, .horaire>tfoot>tr>th, .horaire>thead>tr>td, .horaire>thead>tr>th
+    {
+        border-top: none;
+        border-bottom: none;
+    }
+    .font-red
+    {
+        color: red;
+        text-decoration: bold;
     }
