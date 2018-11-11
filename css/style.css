@@ -805,7 +805,7 @@ opacity: .5; }
     {
         max-width: 200px;
         max-height: 200px;
-        dislay:flex; 
+        display:flex; 
         align-items: center;
         justify-content: center;
     }
@@ -824,5 +824,30 @@ opacity: .5; }
     .font-red
     {
         color: red;
-        text-decoration: bold;
+    }
+    .maps
+    {
+        border: 2px solid #dcdcdc;
+        border-radius: 5px;
+    }
+    .perso
+    {
+        background-color: rgba(60,57,57,0.5);
+        border-radius: 0;
+        width: 100%;
+    }
+    .perso:hover
+    {
+        background-color: #fff;
+        color: black;
+    }
+    .form-contact
+    {
+        margin-top: -25px;
+    }
+    .widget-contact
+    {
+        background-color: rgba(60,57,57,0.5);
+        padding: 15px;
+        text-align:center;
     }
