@@ -416,7 +416,7 @@ label { }
 .footer { background-color: #1e1c18; padding-top: 60px; padding-bottom: 60px; }
 .footer-block{background-color: #282725;padding: 40px 40px 10px 40px; border-radius: 10px;}
 .footer-widget p { color: #747474; }
-.footer-widget .widget-title { color: #fff; font-weight: 600; padding-bottom: 20px; margin-bottom: 30px; }
+.footer-widget .widget-title { color: #dcdcdc; font-weight: 600; padding-bottom: 20px; margin-bottom: 30px; text-shadow: 1px 1px 2px black, 0 0 5px white, 0 0 2px #dcdcdc; }
 .footer-widget { }
 .footer-widget ul { }
 .footer-widget li { }
