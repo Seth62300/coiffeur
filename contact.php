@@ -9,7 +9,7 @@ else
 	$passage_ligne = "\n";
 }
 //=====Déclaration des messages au format texte et au format HTML.
-$message_html = "<html><head></head><body><center>Bonjour, <br/> ".$_POST['user']."  vous contact pour ".$_POST['raison']." voici sont message <br/><br/> ".$_POST['contenue']."</center></body></html>";
+$message_html = "<html><head></head><body><center>Bonjour, <br/> ".htmlentities($_POST['user'])."  vous contact pour ".htmlentities($_POST['raison'])." voici sont message <br/><br/> ".htmlentities($_POST['contenue'])."</center></body></html>";
 //==========
  
 //=====Création de la boundary
@@ -21,8 +21,8 @@ $sujet = "Prise de contact de ".$_POST['user'].", pour ".$_POST['raison']." ";
 //=========
  
 //=====Création du header de l'e-mail.
-$header = "From: \"".$_POST['user']."\"<".$_POST['email'].">".$passage_ligne;
-$header.= "Reply-to: \"".$_POST['user']."\" <".$_POST['email'].">".$passage_ligne;
+$header = "From: \"".addslashes($_POST['user'])."\"<".addslashes($_POST['email']).">".$passage_ligne;
+$header.= "Reply-to: \"".addslashes($_POST['user'])."\" <".addslashes($_POST['email']).">".$passage_ligne;
 $header.= "MIME-Version: 1.0".$passage_ligne;
 $header.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
 //==========
@@ -45,4 +45,4 @@ $message.= $passage_ligne."--".$boundary."--".$passage_ligne;
 mail($mail,$sujet,$message,$header);
 header('location: contact_true.php?valide=true');
 //==========
-?>
+
