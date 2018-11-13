@@ -1186,3 +1186,9 @@ opacity: .5; }
         margin-top: -170px;
         margin-left: 210px;
     }
+    .sous-titre
+    {
+        font-size: 15px;
+        color: #dcdcdc;
+        text-align: center;
+    }
