@@ -306,7 +306,7 @@ label { }
 /*--------------------------
     5.2 Navigations Regular
    ----------------------------*/
-.hero-section { padding-top: 135px; padding-bottom: 135px; position:relative; top:0; left:0; background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(https://via.placeholder.com/1200) no-repeat center; background-size: cover; }
+.hero-section { padding-top: 135px; padding-bottom: 135px; position:relative; top:0; left:0; background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../images/bg01.jpg) no-repeat center; background-size: cover; }
 .hero-caption { padding-top: 100px; padding-bottom: 100px; }
 .hero-title {color: #fff; line-height: 58px; font-weight: 600; margin-bottom: 30px; letter-spacing: -1px; min-width: 300px;}
 .hero-text { font-size: 18px; color: #fff; margin-bottom: 30px; }
@@ -991,7 +991,8 @@ opacity: .5; }
     }
     .contenue_top
     {
-        background: rgba(0,0,0,0.2);
+        background: rgba(0,0,0,0.5);
+        border: solid 2px rgba(225, 221, 1900.5);
         color: white;
         padding: 10px;
         display: flex;
@@ -1002,6 +1003,80 @@ opacity: .5; }
         border-radius: 2%;
         height: 20em;
         margin-left: 25%;
+        -webkit-animation-name: bounceInDown;
+        animation-name: bounceInDown;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes bounceInDown {
+        0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+        
+        0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+        }
+        
+        60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+        }
+        
+        75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+        }
+        
+        90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+        }
+        
+        100% {
+        -webkit-transform: none;
+        transform: none;
+        }
+        }
+        
+        @keyframes bounceInDown {
+        0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+        
+        0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+        }
+        
+        60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+        }
+        
+        75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+        }
+        
+        90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+        }
+        
+        100% {
+        -webkit-transform: none;
+        transform: none;
+        }
+        
     }
     .contenue_top .logo
     {
