@@ -1040,6 +1040,7 @@ opacity: .5; }
     .font-red
     {
         color: red;
+        font-style: italic;
     }
     .maps
     {
