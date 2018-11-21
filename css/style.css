@@ -428,7 +428,7 @@ label { }
 .footer-social ul li { }
 .footer-social ul li a i { padding-right: 10px; width: 30px; }
 .footer-social ul li a:hover i { color: #aa9144; }
-.footer .contact li { position: relative; padding-left: 40px; display: block; '
+.footer .contact li { position: relative; padding-left: 40px; display: block;
 margin-bottom: 8px; padding: 0 0 8px 40px; color: #747474; }
 .footer .contact li i { display: block; position: absolute; top: 5px; left: 0; width: 30px; 
     font-size: 16px; text-align: center; }
@@ -994,14 +994,14 @@ opacity: .5; }
      .contenue_top .logo { margin-top: 0 !important; margin-left: 0 !important;}
      .title{ display:flex; align-items: center; justify-content: center; margin-left: 20px;}
      .centered
-    {
-        
-       
+        {
+            
         display: flex;
         align-items: center;
         justify-content: center;
 
-    }
+        }
+
     }
 
     .carousel-item
@@ -1096,7 +1096,7 @@ opacity: .5; }
     .contenue_top
     {
         background: rgba(0,0,0,0.5);
-        border: solid 2px rgba(225, 221, 1900.5);
+        border: solid 2px rgba(225, 221, 190, 0.5);
         color: white;
         padding: 10px;
         display: flex;
